@@ -1,0 +1,117 @@
+
+
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
+    background-image: url("../imgs/space_background.jpg");
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
+}
+
+h1{
+    font-size: 64px;
+    line-height: 1;
+    text-align: center;
+    padding: 50px 0;
+}
+
+h2{
+    font-size: 30px;
+    line-height: 1;
+    text-decoration: underline;
+}
+
+p{
+    font-size: 24px;
+    text-align: center;
+}
+
+img{
+    display: block;
+    margin: auto;
+    padding: 10px;
+    width: 525px;
+}
+div{
+    padding: 25px;
+    min-height: 150px;
+}
+
+.External_Docs a{    
+    color: #5fd7fc;
+}
+
+.RASA a{
+    color: #5fd7fc;
+}
+
+footer {
+    text-align: center;
+    padding-bottom: 2px;
+    padding-right: 10px;
+    padding-top: 10px;
+}
+
+nav li{
+    display: inline;
+    padding-right: 20px;
+}
+
+nav a{
+    color: #ffffff;
+    font-weight: bold;
+    text-decoration: none;
+}
+.active{
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+nav a:hover, nav a:focus{
+    text-decoration: underline;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+@media all and (min-width: 800px){
+    nav{
+        padding: 30px 0px;
+        text-align: center;
+        vertical-align: center;
+    }
+
+    .grid_container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .apps{
+        display: flex;
+        justify-content: center;
+        flex-flow: row wrap;
+        align-content: center;
+    }
+}
+  
+@media screen and (prefers-reduced-motion: reduce){
+    html{
+        scroll-behavior: auto;
+    }
+  
+    .skip a{
+      -webkit-transition: none; 
+      transition: none;       
+     }
+  
+    header{
+      background-attachment: initial;
+    }
+  }
