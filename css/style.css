@@ -1,6 +1,3 @@
-
-
-
 body{
     font-family: Arial, Helvetica, sans-serif;
     color: #ffffff;
@@ -8,30 +5,26 @@ body{
     margin: 0;
     padding: 0;
 }
-
 header{
     font-family: Arial, Helvetica, sans-serif;
     color: #ffffff;
 }
-
 h1{
     font-size: 64px;
     line-height: 1;
     text-align: center;
     padding: 50px 0;
 }
-
 h2{
     font-size: 30px;
     line-height: 1;
+    text-align: center;
     text-decoration: underline;
 }
-
 p{
     font-size: 24px;
     text-align: center;
 }
-
 img{
     display: block;
     margin: auto;
@@ -42,65 +35,163 @@ div{
     padding: 25px;
     min-height: 150px;
 }
-
 .External_Docs a{    
-    color: #5fd7fc;
+    color: #ffffff;
 }
-
 .RASA a{
-    color: #5fd7fc;
+    color: #ffffff;
 }
-
 footer {
     text-align: center;
     padding-bottom: 2px;
     padding-right: 10px;
     padding-top: 10px;
 }
-
 nav li{
     display: inline;
     padding-right: 20px;
 }
-
 nav a{
     color: #ffffff;
     font-weight: bold;
     text-decoration: none;
+    font-size: 20px;
+}
+nav a:hover, nav a:focus{
+    text-decoration: underline;
 }
 .active{
     font-weight: bold;
     text-decoration: underline;
 }
 
-nav a:hover, nav a:focus{
-    text-decoration: underline;
+body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+form {
+    border: 3px solid #f1f1f1;
+} 
+legend{ 
+    font-size: 125%;
+    font-style:italic;
+    text-transform: uppercase;
+    text-align: center;
+}
+label{
+    display: inline-block;
+    margin-right:10px;
+    width:15%;
+}
+input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+span{
+    margin-left:20%;
+    font-family: italic;
+    font-weight: bold;
+} 
+textarea{
+    width: 100%;
+    height: 35vh;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+input[type=checkbox]{
+      display:inline;
+      width:inherit;
+}
+input[type=submit] {
+    background-color: #38803C;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+input[type=submit]:hover {
+    opacity: 0.8;
 }
 
-html{
-    scroll-behavior: smooth;
+.grid_container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
-@media all and (min-width: 800px){
+.apps{
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    align-content: center;
+}
+form{
+    width: 80%;
+    margin: 0 auto;
+}
+input{
+    width:80%;
+}
+textarea{
+    width:80%;
+    height: 25vh;
+}
+div + label{
+    line-height: 25vh;
+    vertical-align:top;
+} 
+
+@media all and (min-width: 700px){
     nav{
         padding: 30px 0px;
         text-align: center;
         vertical-align: center;
     }
-
     .grid_container{
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
 
+    .External_Docs {
+        font-size: 30px;
+    }
+    .RASA {
+        font-size: 30px;
+    }
     .apps{
         display: flex;
         justify-content: center;
         flex-flow: row wrap;
         align-content: center;
     }
+    form{
+        width: 80%;
+        margin: 0 auto;
+    }
+    input{
+        width:80%;
+    }
+    textarea{
+        width:80%;
+        height: 25vh;
+    }
+    div + label{
+        line-height: 25vh;
+        vertical-align:top;
+    } 
+    html{
+        scroll-behavior: smooth;
+    }
+
 }
-  
 @media screen and (prefers-reduced-motion: reduce){
     html{
         scroll-behavior: auto;
