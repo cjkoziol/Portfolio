@@ -1,7 +1,11 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
     color: #ffffff;
+    background-color: black;
     background-image: url("../imgs/space_background.jpg");
+    background-repeat: space;
+    background-attachment: fixed;
+    font-size: 125%;
     margin: 0;
     padding: 0;
 }
@@ -37,9 +41,11 @@ div{
 }
 .External_Docs a{    
     color: #ffffff;
+    line-height: 2;
 }
 .RASA a{
     color: #ffffff;
+    line-height: 1.5;
 }
 footer {
     text-align: center;
@@ -50,6 +56,7 @@ footer {
 nav li{
     display: inline;
     padding-right: 20px;
+    
 }
 nav a{
     color: #ffffff;
