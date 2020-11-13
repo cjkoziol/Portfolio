@@ -5,16 +5,17 @@ body{
     background-image: url("../imgs/space_background.jpg");
     background-repeat: space;
     background-attachment: fixed;
-    font-size: 125%;
-    margin: 0;
+    font-size: 20px;
+    margin: 1% 2%;
     padding: 0;
 }
 header{
     font-family: Arial, Helvetica, sans-serif;
     color: #ffffff;
 }
+
 h1{
-    font-size: 64px;
+    font-size: 50px;
     line-height: 1;
     text-align: center;
     padding: 50px 0;
@@ -30,22 +31,25 @@ p{
     text-align: center;
 }
 img{
-    display: block;
+    /* display: block; */
     margin: auto;
-    padding: 10px;
-    width: 525px;
+    overflow: hidden;
+    /* padding: 10px;*/
 }
+
 div{
     padding: 25px;
-    min-height: 150px;
+    /* min-height: 150px; */
 }
 .External_Docs a{    
     color: #ffffff;
     line-height: 2;
+    /* list-style-image: url("../imgs/vega_logo.png"); */
 }
 .RASA a{
     color: #ffffff;
     line-height: 1.5;
+    /* list-style-image: url("../imgs/vega_logo.png"); */
 }
 footer {
     text-align: center;
@@ -55,8 +59,12 @@ footer {
 }
 nav li{
     display: inline;
-    padding-right: 20px;
-    
+    padding: 3%;
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-around;
 }
 nav a{
     color: #ffffff;
@@ -131,14 +139,20 @@ input[type=submit]:hover {
 
 .grid_container{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
+    justify-content: 
 }
 
 .apps{
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    flex-flow: row wrap;
     align-content: center;
+    align-items: flex-start;
+    /* flex-basis: 400px; */
+    min-height: 700px;
+    width: 400px;
+
 }
 form{
     width: 80%;
@@ -156,15 +170,18 @@ div + label{
     vertical-align:top;
 } 
 
-@media all and (min-width: 700px){
+@media all and (min-width: 1000px){
+    /* h1 */
     nav{
+        background-color: rgba(255, 255, 255, .25);
         padding: 30px 0px;
         text-align: center;
         vertical-align: center;
     }
-    .grid_container{
+    .grid_container li a{
         display: grid;
         grid-template-columns: 1fr 1fr;
+        background-color: rgba(255, 255, 255, .25);
     }
 
     .External_Docs {
@@ -173,8 +190,15 @@ div + label{
     .RASA {
         font-size: 30px;
     }
+
+    .grid_container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
     .apps{
         display: flex;
+        min-height: 500px;
+        flex-direction: column;
         justify-content: center;
         flex-flow: row wrap;
         align-content: center;
