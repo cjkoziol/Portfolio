@@ -160,6 +160,10 @@ input[type=submit]:hover {
     justify-content: 
 }
 
+.img_container{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+}
 .apps{
     display: flex;
     flex-direction: column;
@@ -170,6 +174,29 @@ input[type=submit]:hover {
     /* min-height: 700px; */
 }
 
+.grid_container li {
+    /* display: grid;
+    grid-template-columns: 1fr 1fr; */
+    background-color: rgba(255, 255, 255, .25);
+}
+
+.skip a{
+    background: white;
+    left: 0;
+    padding: 6px;
+    -webkit-transition: top 1s ease-out;
+    transition: top 1s ease-out;
+    z-index: 1;
+  
+    /*Your code here*/
+    position:absolute;
+    top: -40px;
+}
+  
+  .skip a:focus{
+    top:0px
+}
+  
 /* form{
     width: 80%;
     margin: 0 auto;
@@ -279,12 +306,9 @@ div + label{
         text-align: center;
         vertical-align: center;
     }
-    .grid_container li {
-        /* display: grid;
-        grid-template-columns: 1fr 1fr; */
-        background-color: rgba(255, 255, 255, .25);
-        list-style-image: "imgs/claws_logob.png";
-    }
+
+        /* list-style-image: "imgs/claws_logob.png"; */
+    
     nav ul{
         display: flex;
         justify-content: space-around;
@@ -326,7 +350,8 @@ div + label{
     .tile--css_animations__demo3 {
         background: rgb(0, 0, 0);
         overflow: hidden;
-        padding-top: -50px;
+        /* padding-top: -20px; */
+        margin: 0 auto;
 
     }
     .tile--css_animations__demo3 span {
@@ -336,12 +361,12 @@ div + label{
         height: 0;
         padding-top: 78%;
         padding-left: 0%;
-        /* padding-bottom: 0%; */
+        padding-bottom: 0%;
         /* overflow: hidden; */
     }
     .tile--css_animations__demo3 div {
         margin-top: -8.5%;
-        height: 17%;
+        height: 25%;
         width: -1%;
         top: 30%;
         border-radius: 20px;
