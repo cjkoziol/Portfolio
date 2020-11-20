@@ -72,8 +72,11 @@ nav li{
     display: inline;
     padding: 3%
 }
-nav{
 
+/* main{
+    min-height: 85vh;
+} */
+nav{
     width: 100%;
     background-color: rgba(255, 255, 255, .25);
 }
@@ -94,6 +97,7 @@ nav a:hover, nav a:focus{
 }
 .active{
     font-weight: bold;
+    text-transform: uppercase;
     text-decoration: underline;
 }
 
@@ -161,8 +165,11 @@ input[type=submit]:hover {
 }
 
 .img_container{
-    display: grid;
-    grid-template-columns: auto auto auto auto auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    align-items: flex-start;
 }
 .apps{
     display: flex;
@@ -172,6 +179,12 @@ input[type=submit]:hover {
     align-items: flex-start;
     /* flex-basis: 400px; */
     /* min-height: 700px; */
+}
+
+.apps:hover > img{
+    filter: grayscale(100%);
+
+
 }
 
 .grid_container li {
@@ -292,6 +305,22 @@ div + label{
       }
 }
 @media screen and (min-width: 1100px){
+    .skip a{
+        background: white;
+        left: 0;
+        padding: 6px;
+        -webkit-transition: top 1s ease-out;
+        transition: top 1s ease-out;
+        z-index: 1;
+      
+        /*Your code here*/
+        position:absolute;
+        top: -40px;
+    }
+      
+      .skip a:focus{
+        top:0px
+    }
     figure{
         width: 25%;
     }
@@ -347,11 +376,11 @@ div + label{
         scroll-behavior: smooth;
     }
 
-    .tile--css_animations__demo3 {
+    /* .tile--css_animations__demo3 {
         background: rgb(0, 0, 0);
         overflow: hidden;
         /* padding-top: -20px; */
-        margin: 0 auto;
+        /* margin: 0 auto;
 
     }
     .tile--css_animations__demo3 span {
@@ -361,9 +390,9 @@ div + label{
         height: 0;
         padding-top: 78%;
         padding-left: 0%;
-        padding-bottom: 0%;
+        padding-bottom: 0%; */
         /* overflow: hidden; */
-    }
+    /* }
     .tile--css_animations__demo3 div {
         margin-top: -8.5%;
         height: 25%;
@@ -524,7 +553,7 @@ div + label{
             left: 100%;
             background: #ffffff;
         }
-    }
+    } */
 
 }
 @media (prefers-reduced-motion: reduce){
