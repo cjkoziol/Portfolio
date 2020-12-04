@@ -11,8 +11,7 @@ body{
     font-size: 20px;
     margin: 1% 2%;
     padding: 0;
-    /* height: 100vh;
-    width: 100vw; */
+
 
 }
 header{
@@ -38,6 +37,11 @@ p{
     font-size: 18px;
     text-align: center;
 }
+
+.border{
+    border: solid;
+}
+
 img{
     margin: auto;
     overflow: hidden;
