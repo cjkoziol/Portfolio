@@ -1,6 +1,4 @@
-/* html body{
 
-} */
 body{
     font-family: Arial, Helvetica, sans-serif;
     color: #ffffff;
@@ -56,6 +54,7 @@ figure{
     border: 2px solid white;
     margin: 15px;
 }
+
 div{
     padding: 25px;
 }
@@ -166,8 +165,6 @@ input[type=submit]:hover {
     display: grid;
     grid-template-columns: 1fr;
     justify-content: center;
-    /* height: 100%;
-    width: 100%; */
 }
 
 .img_container{
@@ -176,8 +173,6 @@ input[type=submit]:hover {
     justify-content: center;
     align-content: center;
     align-items: flex-start;
-    /* height: 100%;
-    width: 100%; */
 }
 
 .img_container2{
@@ -194,13 +189,7 @@ input[type=submit]:hover {
     justify-content: center;
     align-content: center;
     align-items: flex-start;
-    /* height: 100%;
-    width: 100%; */
 }
-/* #main{
-    height: 100%;
-    width: 100%;
-} */
 
 .grid_container li {
     background-color: rgba(255, 255, 255, .25);
@@ -229,7 +218,6 @@ input[type=submit]:hover {
     }
     nav li{
         display: inline;
-        /* padding: 0%; */
     }
 
     .apps{
