@@ -9,9 +9,8 @@ body{
     font-size: 20px;
     margin: 1% 2%;
     padding: 0;
-
-
 }
+
 header{
     font-family: Arial, Helvetica, sans-serif;
     color: #ffffff;
@@ -31,6 +30,7 @@ h2{
     text-align: center;
     text-decoration: underline;
 }
+
 p{
     font-size: 18px;
     text-align: center;
@@ -44,11 +44,13 @@ img{
     margin: auto;
     overflow: hidden;
 }
+
 .apps img{
     width: 95%;
     height: 200px;
     margin: 1%;
 }
+
 figure{
     width: 95%;
     border: 2px solid white;
@@ -58,15 +60,18 @@ figure{
 div{
     padding: 25px;
 }
+
 .External_Docs a{    
     color: #ffffff;
     line-height: 2;
 }
+
 .RASA a{
     color: #ffffff;
     line-height: 1.5;
 
 }
+
 footer {
     text-align: center;
     position: sticky;
@@ -74,6 +79,7 @@ footer {
     padding-right: 10px;
     padding-top: 20px;
 }
+
 nav li{
     display: inline;
     padding: 3%
@@ -83,21 +89,25 @@ nav{
     width: 100%;
     background-color: rgba(255, 255, 255, .25);
 }
+
 nav ul{
     display: flex;
     justify-content: space-around;
     flex-direction: column;
     align-items: center;   
 }
+
 nav a{
     color: #ffffff;
     font-weight: bold;
     text-decoration: none;
     font-size: 20px;
 }
+
 nav a:hover, nav a:focus{
     text-decoration: underline;
 }
+
 .active{
     font-weight: bold;
     text-transform: uppercase;
@@ -106,22 +116,25 @@ nav a:hover, nav a:focus{
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-  }
+}
   
 form {
     border: 3px solid #f1f1f1;
 } 
+
 legend{ 
     font-size: 125%;
     font-style:italic;
     text-transform: uppercase;
     text-align: center;
 }
+
 label{
     display: inline-block;
     margin-right:10px;
     width:90%;
 }
+
 input {
     width: 100%;
     padding: 12px 20px;
@@ -130,11 +143,13 @@ input {
     border: 1px solid #ccc;
     box-sizing: border-box;
 }
+
 span{
     margin-left:20%;
     font-family: italic;
     font-weight: bold;
 } 
+
 textarea{
     width: 100%;
     height: 35vh;
@@ -144,10 +159,12 @@ textarea{
     border: 1px solid #ccc;
     box-sizing: border-box;
 }
+
 input[type=checkbox]{
       display:inline;
       width:inherit;
 }
+
 input[type=submit] {
     background-color: #38803C;
     color: white;
@@ -157,6 +174,7 @@ input[type=submit] {
     cursor: pointer;
     width: 100%;
 }
+
 input[type=submit]:hover {
     opacity: 0.8;
 }
@@ -210,12 +228,12 @@ input[type=submit]:hover {
     top:0px
 }
   
-
 @media screen and (min-width: 600px){
     figure{
         width: 45%;
 
     }
+
     nav li{
         display: inline;
     }
@@ -233,17 +251,21 @@ input[type=submit]:hover {
         width: 80%;
         margin: 0 auto;
     }
+
     input{
         width:80%;
     }
+
     textarea{
         width:80%;
         height: 25vh;
     }
+
     div + label{
         line-height: 25vh;
         vertical-align:top;
     }
+
 }
 
 @media screen and (min-width: 1100px){
@@ -261,10 +283,12 @@ input[type=submit]:hover {
         text-align: center;
         text-decoration: underline;
     }
+
     p{
         font-size: 24px;
         text-align: center;
     }
+
     .skip a{
         background: white;
         left: 0;
@@ -275,9 +299,11 @@ input[type=submit]:hover {
         position:absolute;
         top: -40px;
     }
+
       .skip a:focus{
         top:0px
     }
+
     figure{
         width: 25%;
     }
@@ -286,6 +312,7 @@ input[type=submit]:hover {
         display: inline;
         padding: 0%;
     }
+
     nav{
         background-color: rgba(255, 255, 255, .25);
         padding: 30px 0px;
@@ -307,9 +334,11 @@ input[type=submit]:hover {
         text-decoration: none;
         font-size: 25px;
     }
+
     .External_Docs {
         font-size: 30px;
     }
+
     .RASA {
         font-size: 30px;
     }
@@ -318,6 +347,7 @@ input[type=submit]:hover {
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
+    
     .apps{
         display: flex;
         min-height: 500px;
